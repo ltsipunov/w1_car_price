@@ -4,9 +4,9 @@
 # In[1]:
 
 import logging
-import datetime as dt
-tstamp = dt.datetime.strftime( dt.datetime.now(), '%y%m%d%H%M')
-logging.basicConfig(filename=f"logs/dataset{tstamp}.log",format='%(asctime)s - %(levelname)s:  %(message)s', level=logging.DEBUG)
+#import datetime as dt
+#tstamp = dt.datetime.strftime( dt.datetime.now(), '%y%m%d%H%M')
+#logging.basicConfig(format='%(asctime)s - %(levelname)s:  %(message)s', level=logging.DEBUG)
 
 from utils import * #X,y,cat_cols,fillna,normalize,skew,encode
 
@@ -39,6 +39,11 @@ class DataSet:
         self.tr = normalize(self.tr,self.params['rounding'])
         self.te = normalize(self.te,self.params['rounding'])
         logging.debug(f"prepare: normalize finished")
+        if 'skew' in self.params:
+            th = self.params['skew']['threshold']
+            mult = self.params['skew']['mult']
+            self.tr =  skew(self.tr,th,mult )
+            logging.debug(f"prepare: skew finished")
         self.encode()
         logging.debug(f"prepare: finished")
         return(self)

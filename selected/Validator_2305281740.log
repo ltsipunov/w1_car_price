@@ -1,0 +1,124 @@
+2023-05-28 17:40:30,084 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 1}, 'handler': 'Validator'} 
+2023-05-28 17:40:30,084 - DEBUG:  prepare: started 
+2023-05-28 17:40:31,047 - DEBUG:  prepare: fillna finished 
+2023-05-28 17:41:25,108 - DEBUG:  prepare: normalize finished
+2023-05-28 17:41:26,194 - DEBUG:  prepare: skew finished
+2023-05-28 17:41:30,980 - DEBUG:  encode: fitted 
+2023-05-28 17:41:33,548 - DEBUG:  encode: test transformed 
+2023-05-28 17:41:33,548 - DEBUG:  prepare: finished
+2023-05-28 17:47:58,697 - DEBUG:  model: learned
+2023-05-28 17:48:09,224 - DEBUG:  model: predicted
+2023-05-28 17:48:09,229 - INFO:  model: MAPE= 0.17171102086057927 
+2023-05-28 17:48:10,953 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 2}, 'handler': 'Validator'} 
+2023-05-28 17:48:11,176 - DEBUG:  prepare: started 
+2023-05-28 17:48:12,131 - DEBUG:  prepare: fillna finished 
+2023-05-28 17:49:06,290 - DEBUG:  prepare: normalize finished
+2023-05-28 17:49:07,446 - DEBUG:  prepare: skew finished
+2023-05-28 17:49:12,667 - DEBUG:  encode: fitted 
+2023-05-28 17:49:15,435 - DEBUG:  encode: test transformed 
+2023-05-28 17:49:15,435 - DEBUG:  prepare: finished
+2023-05-28 17:56:25,767 - DEBUG:  model: learned
+2023-05-28 17:56:36,697 - DEBUG:  model: predicted
+2023-05-28 17:56:36,702 - INFO:  model: MAPE= 0.17513391544669243 
+2023-05-28 17:56:38,392 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 4}, 'handler': 'Validator'} 
+2023-05-28 17:56:38,644 - DEBUG:  prepare: started 
+2023-05-28 17:56:39,568 - DEBUG:  prepare: fillna finished 
+2023-05-28 17:57:33,786 - DEBUG:  prepare: normalize finished
+2023-05-28 17:57:35,441 - DEBUG:  prepare: skew finished
+2023-05-28 17:57:41,739 - DEBUG:  encode: fitted 
+2023-05-28 17:57:44,745 - DEBUG:  encode: test transformed 
+2023-05-28 17:57:44,745 - DEBUG:  prepare: finished
+2023-05-28 18:06:04,808 - DEBUG:  model: learned
+2023-05-28 18:06:15,986 - DEBUG:  model: predicted
+2023-05-28 18:06:15,991 - INFO:  model: MAPE= 0.179693614575781 
+2023-05-28 18:06:17,699 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 8}, 'handler': 'Validator'} 
+2023-05-28 18:06:17,961 - DEBUG:  prepare: started 
+2023-05-28 18:06:18,940 - DEBUG:  prepare: fillna finished 
+2023-05-28 18:07:13,125 - DEBUG:  prepare: normalize finished
+2023-05-28 18:07:14,774 - DEBUG:  prepare: skew finished
+2023-05-28 18:07:22,243 - DEBUG:  encode: fitted 
+2023-05-28 18:07:25,742 - DEBUG:  encode: test transformed 
+2023-05-28 18:07:25,742 - DEBUG:  prepare: finished
+2023-05-28 18:18:06,155 - DEBUG:  model: learned
+2023-05-28 18:18:17,653 - DEBUG:  model: predicted
+2023-05-28 18:18:17,663 - INFO:  model: MAPE= 0.18173572352205006 
+2023-05-28 18:18:19,386 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 5000, 'mult': 1}, 'handler': 'Validator'} 
+2023-05-28 18:18:19,666 - DEBUG:  prepare: started 
+2023-05-28 18:18:20,601 - DEBUG:  prepare: fillna finished 
+2023-05-28 18:19:15,517 - DEBUG:  prepare: normalize finished
+2023-05-28 18:19:16,685 - DEBUG:  prepare: skew finished
+2023-05-28 18:19:21,727 - DEBUG:  encode: fitted 
+2023-05-28 18:19:24,344 - DEBUG:  encode: test transformed 
+2023-05-28 18:19:24,344 - DEBUG:  prepare: finished
+2023-05-28 18:25:54,914 - DEBUG:  model: learned
+2023-05-28 18:26:05,010 - DEBUG:  model: predicted
+2023-05-28 18:26:05,010 - INFO:  model: MAPE= 0.17178266623484453 
+2023-05-28 18:26:06,703 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 5000, 'mult': 2}, 'handler': 'Validator'} 
+2023-05-28 18:26:06,931 - DEBUG:  prepare: started 
+2023-05-28 18:26:07,942 - DEBUG:  prepare: fillna finished 
+2023-05-28 18:27:02,843 - DEBUG:  prepare: normalize finished
+2023-05-28 18:27:04,104 - DEBUG:  prepare: skew finished
+2023-05-28 18:27:09,864 - DEBUG:  encode: fitted 
+2023-05-28 18:27:12,877 - DEBUG:  encode: test transformed 
+2023-05-28 18:27:12,877 - DEBUG:  prepare: finished
+2023-05-28 18:35:13,459 - DEBUG:  model: learned
+2023-05-28 18:35:24,332 - DEBUG:  model: predicted
+2023-05-28 18:35:24,332 - INFO:  model: MAPE= 0.17587527502513864 
+2023-05-28 18:35:26,042 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 5000, 'mult': 4}, 'handler': 'Validator'} 
+2023-05-28 18:35:26,298 - DEBUG:  prepare: started 
+2023-05-28 18:35:27,270 - DEBUG:  prepare: fillna finished 
+2023-05-28 18:36:22,263 - DEBUG:  prepare: normalize finished
+2023-05-28 18:36:23,848 - DEBUG:  prepare: skew finished
+2023-05-28 18:36:31,293 - DEBUG:  encode: fitted 
+2023-05-28 18:36:35,115 - DEBUG:  encode: test transformed 
+2023-05-28 18:36:35,115 - DEBUG:  prepare: finished
+2023-05-28 18:47:24,677 - DEBUG:  model: learned
+2023-05-28 18:47:36,650 - DEBUG:  model: predicted
+2023-05-28 18:47:36,655 - INFO:  model: MAPE= 0.18085793468476952 
+2023-05-28 18:47:38,549 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 5000, 'mult': 8}, 'handler': 'Validator'} 
+2023-05-28 18:47:38,902 - DEBUG:  prepare: started 
+2023-05-28 18:47:40,006 - DEBUG:  prepare: fillna finished 
+2023-05-28 18:48:36,238 - DEBUG:  prepare: normalize finished
+2023-05-28 18:48:38,615 - DEBUG:  prepare: skew finished
+2023-05-28 18:48:49,943 - DEBUG:  encode: fitted 
+2023-05-28 18:48:54,786 - DEBUG:  encode: test transformed 
+2023-05-28 18:48:54,786 - DEBUG:  prepare: finished
+2023-05-28 19:04:26,954 - DEBUG:  model: learned
+2023-05-28 19:04:39,807 - DEBUG:  model: predicted
+2023-05-28 19:04:39,974 - INFO:  model: MAPE= 0.1827270585977118 
+2023-05-28 19:04:42,135 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 1}, 'handler': 'Validator'} 
+2023-05-28 19:04:42,486 - DEBUG:  prepare: started 
+2023-05-28 19:04:43,534 - DEBUG:  prepare: fillna finished 
+2023-05-28 19:05:44,005 - DEBUG:  prepare: normalize finished
+2023-05-28 19:05:45,122 - DEBUG:  prepare: skew finished
+2023-05-28 19:05:50,079 - DEBUG:  encode: fitted 
+2023-05-28 19:05:52,763 - DEBUG:  encode: test transformed 
+2023-05-28 19:05:52,763 - DEBUG:  prepare: finished
+2023-05-28 19:12:11,594 - DEBUG:  model: learned
+2023-05-28 19:12:22,149 - DEBUG:  model: predicted
+2023-05-28 19:12:22,159 - INFO:  model: MAPE= 0.17165868596827347 
+2023-05-28 19:12:24,002 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 2}, 'handler': 'Validator'} 
+2023-05-28 19:12:24,260 - DEBUG:  prepare: started 
+2023-05-28 19:12:25,233 - DEBUG:  prepare: fillna finished 
+2023-05-28 19:13:20,855 - DEBUG:  prepare: normalize finished
+2023-05-28 19:13:22,173 - DEBUG:  prepare: skew finished
+2023-05-28 19:13:27,690 - DEBUG:  encode: fitted 
+2023-05-28 19:13:30,475 - DEBUG:  encode: test transformed 
+2023-05-28 19:13:30,475 - DEBUG:  prepare: finished
+2023-05-28 19:20:28,231 - DEBUG:  model: learned
+2023-05-28 19:20:39,976 - DEBUG:  model: predicted
+2023-05-28 19:20:39,984 - INFO:  model: MAPE= 0.17530877372252246 
+2023-05-28 19:20:41,759 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 4}, 'handler': 'Validator'} 
+2023-05-28 19:20:42,014 - DEBUG:  prepare: started 
+2023-05-28 19:20:43,040 - DEBUG:  prepare: fillna finished 
+2023-05-28 19:21:37,428 - DEBUG:  prepare: normalize finished
+2023-05-28 19:21:38,945 - DEBUG:  prepare: skew finished
+2023-05-28 19:21:45,113 - DEBUG:  encode: fitted 
+2023-05-28 19:21:48,123 - DEBUG:  encode: test transformed 
+2023-05-28 19:21:48,123 - DEBUG:  prepare: finished
+2023-05-28 19:29:48,288 - DEBUG:  model: learned
+2023-05-28 19:29:59,640 - DEBUG:  model: predicted
+2023-05-28 19:29:59,640 - INFO:  model: MAPE= 0.17967759740570602 
+2023-05-28 19:30:02,736 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'skew': {'threshold': 2500, 'mult': 8}, 'handler': 'Validator'} 
+2023-05-28 19:30:03,265 - DEBUG:  prepare: started 
+2023-05-28 19:30:04,292 - DEBUG:  prepare: fillna finished 

@@ -104,7 +104,6 @@ def normalize(df,rounding):
                                          cols_to_upper=cols_to_upper,cols_dt=cols_dt,cols_abbr=cols_abbr)
     df[transformed.columns] = transformed   
     
-#    print(f"normalize: {ti.default_timer()-start} s " )
     return df
 
 
@@ -112,10 +111,11 @@ def normalize(df,rounding):
 
 
 def skew(df,threshold,mult):
-    df0 = df[df[y]>threshold]
-    df1 = df[ds[y]<threshold]
+    df0 = df[df[y[0]]>threshold]
+    df1 = df[df[y[0]]<threshold]
+    
     if mult >=1:
-        df = pd.concat( [df0]+mult*[df1] ,axis=0).copy()
+        df = pd.concat( [df0]+mult*[df1] ,axis=0).copy() 
     else:
         idx = df0.sample(frac=mult, replace=True).index
         df = pd.concat( [df0[idx]]+[df1] ,axis=0).copy()
@@ -132,6 +132,5 @@ def encode_transform(df,enc ):
     df = df.drop(cat_cols,axis=1)
     df = pd.concat( [df,df_enc] , axis=1)
 
-#    print(f"encode: {ti.default_timer()-start} s " )
     return df
 
