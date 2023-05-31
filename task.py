@@ -20,13 +20,17 @@ class Task:
         params['handler'] = type(self).__name__
         self.log = ""
         tstamp = dt.datetime.strftime( dt.datetime.now(), '%y%m%d%H%M')
-        logging.basicConfig( filename=f"logs/{self.params['handler']}_{tstamp}.log",
+        filename = filename=f"logs/{self.params['handler']}_{tstamp}.log"
+        logging.basicConfig( filename=filename,
                 format='%(asctime)s - %(levelname)s:  %(message)s', 
                 level=logging.DEBUG )
         logging.info(f"init params: {self.params} ")
 
     def new_encoder(self):
-        self.encoder = TargetEncoder(handle_unknown='value',cols = cat_cols )
+        enc_params =  { 'handle_unknown':'value','cols':cat_cols }
+        if 'encoder' in self.params:
+            enc_params.update( self.params['encoder'])    
+        self.encoder = TargetEncoder( **enc_params )
         return self.encoder
 
     def new_model(self):

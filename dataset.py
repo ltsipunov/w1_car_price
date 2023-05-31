@@ -31,7 +31,9 @@ class DataSet:
         self.model= model_class(**self.params['model'])
         return(self)
     
-    def prepare(self):
+    def prepare(self):  
+        global X,cat_cols
+
         logging.debug(f"prepare: started ")
         self.tr = fillna(self.tr)
         self.te = fillna(self.te)
@@ -44,6 +46,12 @@ class DataSet:
             mult = self.params['skew']['mult']
             self.tr =  skew(self.tr,th,mult )
             logging.debug(f"prepare: skew finished")
+        if 'sellers' in self.params:
+            self.tr =  classify_sellers(self.tr,self.params['sellers'] )
+            self.te =  classify_sellers(self.te,self.params['sellers'] )
+            X = X + ['q25','q75'] 
+            
+            logging.debug(f"prepare: classify_sellers finished")
         self.encode()
         logging.debug(f"prepare: finished")
         return(self)
@@ -57,7 +65,8 @@ class DataSet:
         return(self)
         
     def fit(self):
-        self.model.fit(self.tr[X],self.tr[y]) 
+        global X,cat_cols
+        self.model.fit(self.tr[X],self.tr[y])     
         logging.debug('model: learned')
         return(self)     
 

@@ -1,0 +1,44 @@
+2023-05-29 19:01:46,987 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 3}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-05-29 19:01:46,988 - DEBUG:  prepare: started 
+2023-05-29 19:01:47,989 - DEBUG:  prepare: fillna finished 
+2023-05-29 19:02:45,003 - DEBUG:  prepare: normalize finished
+2023-05-29 19:03:26,311 - DEBUG:  prepare: classify_sellers finished
+2023-05-29 19:03:30,627 - DEBUG:  encode: fitted 
+2023-05-29 19:03:32,964 - DEBUG:  encode: test transformed 
+2023-05-29 19:03:32,965 - DEBUG:  prepare: finished
+2023-05-29 19:11:32,553 - DEBUG:  model: learned
+2023-05-29 19:11:43,152 - DEBUG:  model: predicted
+2023-05-29 19:11:43,157 - INFO:  model: MAPE= 0.17355992029497327 
+2023-05-29 19:11:45,087 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 5}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-05-29 19:11:45,322 - DEBUG:  prepare: started 
+2023-05-29 19:11:46,340 - DEBUG:  prepare: fillna finished 
+2023-05-29 19:12:44,136 - DEBUG:  prepare: normalize finished
+2023-05-29 19:13:27,733 - DEBUG:  prepare: classify_sellers finished
+2023-05-29 19:13:32,281 - DEBUG:  encode: fitted 
+2023-05-29 19:13:34,673 - DEBUG:  encode: test transformed 
+2023-05-29 19:13:34,673 - DEBUG:  prepare: finished
+2023-05-29 19:22:59,248 - DEBUG:  model: learned
+2023-05-29 19:23:12,213 - DEBUG:  model: predicted
+2023-05-29 19:23:12,220 - INFO:  model: MAPE= 0.1715088428825393 
+2023-05-29 19:23:14,309 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 7}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-05-29 19:23:14,553 - DEBUG:  prepare: started 
+2023-05-29 19:23:15,562 - DEBUG:  prepare: fillna finished 
+2023-05-29 19:24:10,542 - DEBUG:  prepare: normalize finished
+2023-05-29 19:24:50,400 - DEBUG:  prepare: classify_sellers finished
+2023-05-29 19:24:54,589 - DEBUG:  encode: fitted 
+2023-05-29 19:24:56,848 - DEBUG:  encode: test transformed 
+2023-05-29 19:24:56,848 - DEBUG:  prepare: finished
+2023-05-29 19:35:37,135 - DEBUG:  model: learned
+2023-05-29 19:35:50,972 - DEBUG:  model: predicted
+2023-05-29 19:35:50,981 - INFO:  model: MAPE= 0.1712829769411908 
+2023-05-29 19:35:53,011 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 200, 'max_depth': 50, 'min_samples_leaf': 2}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-05-29 19:35:53,347 - DEBUG:  prepare: started 
+2023-05-29 19:35:54,410 - DEBUG:  prepare: fillna finished 
+2023-05-29 19:36:55,035 - DEBUG:  prepare: normalize finished
+2023-05-29 19:37:37,984 - DEBUG:  prepare: classify_sellers finished
+2023-05-29 19:37:42,399 - DEBUG:  encode: fitted 
+2023-05-29 19:37:44,709 - DEBUG:  encode: test transformed 
+2023-05-29 19:37:44,709 - DEBUG:  prepare: finished
+2023-05-29 19:49:21,466 - DEBUG:  model: learned
+2023-05-29 19:49:32,278 - DEBUG:  model: predicted
+2023-05-29 19:49:32,288 - INFO:  model: MAPE= 0.1709658315788185 

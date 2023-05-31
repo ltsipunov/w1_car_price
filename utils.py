@@ -45,8 +45,10 @@ warnings.filterwarnings('ignore')
 
 
 X = ['year','make','model','abbr_trim','body','transmission','state','condition','odometer','abbr_seller']
+#X = ['year','make','model','abbr_trim','condition','odometer','abbr_seller']
 y = ['sellingprice']
 cat_cols = ['make','model','abbr_trim','body','transmission','state','abbr_seller'] 
+#cat_cols = ['make','model','abbr_trim','abbr_seller'] 
 
 
 # In[ ]:
@@ -73,12 +75,16 @@ def fillna(df):
 
 def normalize(df,rounding):
     start = ti.default_timer()
+    if 'prefix_size' in rounding:
+        prefix_size = rounding['prefix_size']
+    else:
+        prefix_size = 5
     cols_to_upper= ['make','model','trim','body']
     cols_dt = ['year','month','day','hour','minute','second','weekday','yearday','dl']
     cols_abbr = ['trim','seller']
     cols_trash = ['saledate','trim','abbr_seller','seller','second','yearday','dl']
     def transform_row(r,cols_to_upper,cols_dt,cols_abbr):
-        def abbr(s,prefix_size=5 ):
+        def abbr(s,prefix_size ):
             s = s.strip().upper()
             if len(s) <= prefix_size:
                 return(s)
@@ -91,7 +97,7 @@ def normalize(df,rounding):
         t =  dt.datetime.strptime(r['saledate'].split('GMT')[0]  ,"%a %b %d %Y %H:%M:%S ").timetuple()
         dc = dict(zip(cols_dt ,t))
         for col in cols_abbr:
-            dc['abbr_'+col] = abbr(r[col])
+            dc['abbr_'+col] = abbr(r[col],prefix_size)
 
         for col in cols_to_upper:
             dc[col] = str(r[col]).upper()
@@ -123,6 +129,7 @@ def skew(df,threshold,mult):
     return df
 
 
+
 # In[9]:
 
 
@@ -134,3 +141,23 @@ def encode_transform(df,enc ):
 
     return df
 
+
+# In[10]:
+def classify_sellers(ds,params):
+    stages = params['stages']
+    abbr_count = ds['abbr_seller'].value_counts()
+
+    def abbr_power(s):
+        for i in range(stages):
+            if 2**i > abbr_count[s]:
+                return('ABBR_T_'+str(i) )
+        return(s)
+
+    ds['abbr_seller']= ds['abbr_seller'].apply(abbr_power)
+
+    g_abbr = ds.groupby('abbr_seller').condition
+    q_abbr = pd.DataFrame( { 'q25': g_abbr.quantile(.25),'q75':g_abbr.quantile(.75)} )
+    #q_abbr.loc['159191']
+    ds[['q25','q75']] = ds.abbr_seller.apply(lambda s: q_abbr.loc[s] )
+
+    return ds
