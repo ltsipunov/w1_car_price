@@ -44,11 +44,12 @@ warnings.filterwarnings('ignore')
 # In[ ]:
 
 
-X = ['year','make','model','abbr_trim','body','transmission','state','condition','odometer','abbr_seller']
-#X = ['year','make','model','abbr_trim','condition','odometer','abbr_seller']
+X = ['year','make','model','trim','body','transmission','state','condition','odometer','seller']
+cat_cols = ['make','model','trim','body','transmission','state','seller'] 
+#X = ['year','make','model','trim','condition','odometer','seller']
 y = ['sellingprice']
-cat_cols = ['make','model','abbr_trim','body','transmission','state','abbr_seller'] 
-#cat_cols = ['make','model','abbr_trim','abbr_seller'] 
+
+#cat_cols = ['make','model','trim','seller'] 
 
 
 # In[ ]:
@@ -75,14 +76,12 @@ def fillna(df):
 
 def normalize(df,rounding):
     start = ti.default_timer()
-    if 'prefix_size' in rounding:
-        prefix_size = rounding['prefix_size']
-    else:
-        prefix_size = 5
+    prefix_size = rounding['prefix_size'] if ('prefix_size' in rounding) else 5 
+
     cols_to_upper= ['make','model','trim','body']
-    cols_dt = ['year','month','day','hour','minute','second','weekday','yearday','dl']
+    cols_dt = ['yr','month','day','hour','minute','second','weekday','yearday','dl']
     cols_abbr = ['trim','seller']
-    cols_trash = ['saledate','trim','abbr_seller','seller','second','yearday','dl']
+ #   cols_trash = ['saledate','trim','abbr_seller','seller','second','yearday','dl']
     def transform_row(r,cols_to_upper,cols_dt,cols_abbr):
         def abbr(s,prefix_size ):
             s = s.strip().upper()
@@ -97,13 +96,16 @@ def normalize(df,rounding):
         t =  dt.datetime.strptime(r['saledate'].split('GMT')[0]  ,"%a %b %d %Y %H:%M:%S ").timetuple()
         dc = dict(zip(cols_dt ,t))
         for col in cols_abbr:
-            dc['abbr_'+col] = abbr(r[col],prefix_size)
+            dc[col] = abbr(r[col],prefix_size)
 
         for col in cols_to_upper:
             dc[col] = str(r[col]).upper()
  
         dc['odometer']= round(r['odometer']/rounding['odometer'])
         dc['condition']= round(r['condition'],rounding['condition'])
+        for c in cat_cols:
+            if(type(r[c]) != str):
+                r[c] = str(r[c])
         return dc
 
     transformed = df.apply(transform_row, axis=1,result_type='expand',
@@ -145,7 +147,7 @@ def encode_transform(df,enc ):
 # In[10]:
 def classify_sellers(ds,params):
     stages = params['stages']
-    abbr_count = ds['abbr_seller'].value_counts()
+    abbr_count = ds['seller'].value_counts()
 
     def abbr_power(s):
         for i in range(stages):
@@ -153,11 +155,11 @@ def classify_sellers(ds,params):
                 return('ABBR_T_'+str(i) )
         return(s)
 
-    ds['abbr_seller']= ds['abbr_seller'].apply(abbr_power)
+    ds['seller']= ds['seller'].apply(abbr_power)
 
-    g_abbr = ds.groupby('abbr_seller').condition
+    g_abbr = ds.groupby('seller').condition
     q_abbr = pd.DataFrame( { 'q25': g_abbr.quantile(.25),'q75':g_abbr.quantile(.75)} )
     #q_abbr.loc['159191']
-    ds[['q25','q75']] = ds.abbr_seller.apply(lambda s: q_abbr.loc[s] )
+    ds[['q25','q75']] = ds.seller.apply(lambda s: q_abbr.loc[s] )
 
     return ds
