@@ -1,0 +1,53 @@
+2023-06-01 20:38:03,003 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 64, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'CrossValidator'} 
+2023-06-01 20:38:04,543 - DEBUG:  prepare: started 
+2023-06-01 20:38:05,664 - DEBUG:  prepare: fillna finished 
+2023-06-01 20:39:21,753 - DEBUG:  prepare: normalize finished
+2023-06-01 20:40:06,550 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 20:40:11,751 - DEBUG:  encode: fitted 
+2023-06-01 20:40:14,045 - DEBUG:  encode: test transformed 
+2023-06-01 20:40:14,045 - DEBUG:  prepare: finished
+2023-06-01 20:43:13,407 - DEBUG:  model: learned
+2023-06-01 20:43:16,105 - DEBUG:  model: predicted
+2023-06-01 20:43:16,109 - INFO:  model: MAPE= 0.1321936717184024 
+2023-06-01 20:43:16,109 - DEBUG:  prepare: started 
+2023-06-01 20:43:17,212 - DEBUG:  prepare: fillna finished 
+2023-06-01 20:44:27,757 - DEBUG:  prepare: normalize finished
+2023-06-01 20:45:10,003 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 20:45:14,594 - DEBUG:  encode: fitted 
+2023-06-01 20:45:16,755 - DEBUG:  encode: test transformed 
+2023-06-01 20:45:16,755 - DEBUG:  prepare: finished
+2023-06-01 20:48:25,214 - DEBUG:  model: learned
+2023-06-01 20:48:28,041 - DEBUG:  model: predicted
+2023-06-01 20:48:28,045 - INFO:  model: MAPE= 0.13226218671855258 
+2023-06-01 20:48:28,045 - DEBUG:  prepare: started 
+2023-06-01 20:48:29,118 - DEBUG:  prepare: fillna finished 
+2023-06-01 20:49:39,000 - DEBUG:  prepare: normalize finished
+2023-06-01 20:50:21,450 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 20:50:25,867 - DEBUG:  encode: fitted 
+2023-06-01 20:50:28,032 - DEBUG:  encode: test transformed 
+2023-06-01 20:50:28,032 - DEBUG:  prepare: finished
+2023-06-01 20:53:59,750 - DEBUG:  model: learned
+2023-06-01 20:54:02,858 - DEBUG:  model: predicted
+2023-06-01 20:54:02,861 - INFO:  model: MAPE= 0.13184536203222288 
+2023-06-01 20:54:02,862 - DEBUG:  prepare: started 
+2023-06-01 20:54:03,995 - DEBUG:  prepare: fillna finished 
+2023-06-01 20:55:13,930 - DEBUG:  prepare: normalize finished
+2023-06-01 20:55:56,448 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 20:56:00,930 - DEBUG:  encode: fitted 
+2023-06-01 20:56:03,105 - DEBUG:  encode: test transformed 
+2023-06-01 20:56:03,105 - DEBUG:  prepare: finished
+2023-06-01 20:59:36,059 - DEBUG:  model: learned
+2023-06-01 20:59:39,117 - DEBUG:  model: predicted
+2023-06-01 20:59:39,121 - INFO:  model: MAPE= 0.13037589789014575 
+2023-06-01 20:59:39,121 - DEBUG:  cross-validation finished:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2023-06-01 20:59:39,126 - INFO:  MAPE mean: 0.13166927958983088
+2023-06-01 21:21:03,829 - DEBUG:  handle_msg[b1633370-d82f-4520-a403-e1e5ce27791a]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 21, 3, 826000, tzinfo=tzutc()), 'msg_id': '4423b5b18f9f403d8016b9228f457249', 'username': 'username', 'session': 'dbf0ac0dfa69432e835c00ea77edd2f5', 'msg_type': 'comm_msg', 'version': '5.2'}, 'msg_id': '4423b5b18f9f403d8016b9228f457249', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'b1633370-d82f-4520-a403-e1e5ce27791a', 'data': {'method': 'request_states'}}, 'buffers': []})
+2023-06-01 21:21:03,845 - DEBUG:  handle_close[b1633370-d82f-4520-a403-e1e5ce27791a]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 21, 3, 843000, tzinfo=tzutc()), 'msg_id': '69695cce2ba54db58af2e6411610d49a', 'username': 'username', 'session': 'dbf0ac0dfa69432e835c00ea77edd2f5', 'msg_type': 'comm_close', 'version': '5.2'}, 'msg_id': '69695cce2ba54db58af2e6411610d49a', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'b1633370-d82f-4520-a403-e1e5ce27791a', 'data': {}}, 'buffers': []})

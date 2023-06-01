@@ -1,0 +1,301 @@
+2023-06-01 16:14:53,245 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 16:14:53,245 - DEBUG:  prepare: started 
+2023-06-01 16:14:54,161 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:16:00,732 - DEBUG:  prepare: normalize finished
+2023-06-01 16:16:41,747 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:16:47,128 - DEBUG:  encode: fitted 
+2023-06-01 16:16:49,351 - DEBUG:  encode: test transformed 
+2023-06-01 16:16:49,351 - DEBUG:  prepare: finished
+2023-06-01 16:21:55,966 - DEBUG:  model: learned
+2023-06-01 16:22:03,049 - DEBUG:  model: predicted
+2023-06-01 16:22:03,057 - INFO:  model: MAPE= 0.1335834757683081 
+2023-06-01 16:22:04,796 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 16:22:04,928 - DEBUG:  prepare: started 
+2023-06-01 16:22:05,878 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:23:12,350 - DEBUG:  prepare: normalize finished
+2023-06-01 16:23:50,314 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:23:54,450 - DEBUG:  encode: fitted 
+2023-06-01 16:23:56,613 - DEBUG:  encode: test transformed 
+2023-06-01 16:23:56,614 - DEBUG:  prepare: finished
+2023-06-01 16:29:47,367 - DEBUG:  model: learned
+2023-06-01 16:29:53,895 - DEBUG:  model: predicted
+2023-06-01 16:29:53,900 - INFO:  model: MAPE= 0.13357836349610447 
+2023-06-01 16:29:55,609 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 16:29:55,740 - DEBUG:  prepare: started 
+2023-06-01 16:29:56,705 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:31:02,865 - DEBUG:  prepare: normalize finished
+2023-06-01 16:31:41,018 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:31:44,904 - DEBUG:  encode: fitted 
+2023-06-01 16:31:47,019 - DEBUG:  encode: test transformed 
+2023-06-01 16:31:47,019 - DEBUG:  prepare: finished
+2023-06-01 16:38:25,280 - DEBUG:  model: learned
+2023-06-01 16:38:32,103 - DEBUG:  model: predicted
+2023-06-01 16:38:32,110 - INFO:  model: MAPE= 0.13364865749492688 
+2023-06-01 16:38:33,951 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 16:38:34,087 - DEBUG:  prepare: started 
+2023-06-01 16:38:35,041 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:39:41,406 - DEBUG:  prepare: normalize finished
+2023-06-01 16:40:21,233 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:40:25,341 - DEBUG:  encode: fitted 
+2023-06-01 16:40:27,568 - DEBUG:  encode: test transformed 
+2023-06-01 16:40:27,569 - DEBUG:  prepare: finished
+2023-06-01 16:46:57,948 - DEBUG:  model: learned
+2023-06-01 16:47:04,983 - DEBUG:  model: predicted
+2023-06-01 16:47:04,989 - INFO:  model: MAPE= 0.13231045369323488 
+2023-06-01 16:47:06,786 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 16:47:06,913 - DEBUG:  prepare: started 
+2023-06-01 16:47:07,863 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:48:14,116 - DEBUG:  prepare: normalize finished
+2023-06-01 16:48:53,890 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:48:58,003 - DEBUG:  encode: fitted 
+2023-06-01 16:49:00,186 - DEBUG:  encode: test transformed 
+2023-06-01 16:49:00,187 - DEBUG:  prepare: finished
+2023-06-01 16:55:30,126 - DEBUG:  model: learned
+2023-06-01 16:55:37,202 - DEBUG:  model: predicted
+2023-06-01 16:55:37,208 - INFO:  model: MAPE= 0.13205915785455016 
+2023-06-01 16:55:38,986 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 16:55:39,113 - DEBUG:  prepare: started 
+2023-06-01 16:55:40,056 - DEBUG:  prepare: fillna finished 
+2023-06-01 16:56:46,182 - DEBUG:  prepare: normalize finished
+2023-06-01 16:57:25,909 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 16:57:29,963 - DEBUG:  encode: fitted 
+2023-06-01 16:57:32,112 - DEBUG:  encode: test transformed 
+2023-06-01 16:57:32,112 - DEBUG:  prepare: finished
+2023-06-01 17:04:01,868 - DEBUG:  model: learned
+2023-06-01 17:04:08,965 - DEBUG:  model: predicted
+2023-06-01 17:04:08,971 - INFO:  model: MAPE= 0.1321691282272522 
+2023-06-01 17:04:10,808 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 17:04:10,937 - DEBUG:  prepare: started 
+2023-06-01 17:04:11,911 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:05:18,448 - DEBUG:  prepare: normalize finished
+2023-06-01 17:06:00,748 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:06:04,872 - DEBUG:  encode: fitted 
+2023-06-01 17:06:07,025 - DEBUG:  encode: test transformed 
+2023-06-01 17:06:07,025 - DEBUG:  prepare: finished
+2023-06-01 17:12:23,991 - DEBUG:  model: learned
+2023-06-01 17:12:31,331 - DEBUG:  model: predicted
+2023-06-01 17:12:31,337 - INFO:  model: MAPE= 0.13149478847831372 
+2023-06-01 17:12:33,063 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 17:12:33,188 - DEBUG:  prepare: started 
+2023-06-01 17:12:34,132 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:13:40,634 - DEBUG:  prepare: normalize finished
+2023-06-01 17:14:22,414 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:14:26,419 - DEBUG:  encode: fitted 
+2023-06-01 17:14:28,577 - DEBUG:  encode: test transformed 
+2023-06-01 17:14:28,578 - DEBUG:  prepare: finished
+2023-06-01 17:20:59,582 - DEBUG:  model: learned
+2023-06-01 17:21:06,801 - DEBUG:  model: predicted
+2023-06-01 17:21:06,806 - INFO:  model: MAPE= 0.13204396519648323 
+2023-06-01 17:21:08,638 - INFO:  init params: {'rounding': {'odometer': 1000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 17:21:08,773 - DEBUG:  prepare: started 
+2023-06-01 17:21:09,762 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:22:16,953 - DEBUG:  prepare: normalize finished
+2023-06-01 17:22:58,619 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:23:02,628 - DEBUG:  encode: fitted 
+2023-06-01 17:23:04,854 - DEBUG:  encode: test transformed 
+2023-06-01 17:23:04,854 - DEBUG:  prepare: finished
+2023-06-01 17:29:19,064 - DEBUG:  model: learned
+2023-06-01 17:29:25,946 - DEBUG:  model: predicted
+2023-06-01 17:29:25,951 - INFO:  model: MAPE= 0.13227864388914465 
+2023-06-01 17:29:27,724 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 17:29:27,858 - DEBUG:  prepare: started 
+2023-06-01 17:29:28,871 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:30:37,244 - DEBUG:  prepare: normalize finished
+2023-06-01 17:31:15,434 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:31:19,484 - DEBUG:  encode: fitted 
+2023-06-01 17:31:21,764 - DEBUG:  encode: test transformed 
+2023-06-01 17:31:21,765 - DEBUG:  prepare: finished
+2023-06-01 17:37:43,400 - DEBUG:  model: learned
+2023-06-01 17:37:50,691 - DEBUG:  model: predicted
+2023-06-01 17:37:50,696 - INFO:  model: MAPE= 0.133329046879516 
+2023-06-01 17:37:52,399 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 17:37:52,527 - DEBUG:  prepare: started 
+2023-06-01 17:37:53,438 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:38:59,932 - DEBUG:  prepare: normalize finished
+2023-06-01 17:39:38,102 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:39:42,069 - DEBUG:  encode: fitted 
+2023-06-01 17:39:44,227 - DEBUG:  encode: test transformed 
+2023-06-01 17:39:44,227 - DEBUG:  prepare: finished
+2023-06-01 17:46:04,573 - DEBUG:  model: learned
+2023-06-01 17:46:11,450 - DEBUG:  model: predicted
+2023-06-01 17:46:11,456 - INFO:  model: MAPE= 0.1339745823368105 
+2023-06-01 17:46:13,128 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 17:46:13,252 - DEBUG:  prepare: started 
+2023-06-01 17:46:14,200 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:47:20,839 - DEBUG:  prepare: normalize finished
+2023-06-01 17:47:58,939 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:48:02,881 - DEBUG:  encode: fitted 
+2023-06-01 17:48:04,991 - DEBUG:  encode: test transformed 
+2023-06-01 17:48:04,991 - DEBUG:  prepare: finished
+2023-06-01 17:54:26,341 - DEBUG:  model: learned
+2023-06-01 17:54:33,719 - DEBUG:  model: predicted
+2023-06-01 17:54:33,725 - INFO:  model: MAPE= 0.1348661915155183 
+2023-06-01 17:54:35,471 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 17:54:35,609 - DEBUG:  prepare: started 
+2023-06-01 17:54:36,520 - DEBUG:  prepare: fillna finished 
+2023-06-01 17:55:42,959 - DEBUG:  prepare: normalize finished
+2023-06-01 17:56:22,898 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 17:56:27,074 - DEBUG:  encode: fitted 
+2023-06-01 17:56:29,251 - DEBUG:  encode: test transformed 
+2023-06-01 17:56:29,252 - DEBUG:  prepare: finished
+2023-06-01 18:02:39,227 - DEBUG:  model: learned
+2023-06-01 18:02:46,166 - DEBUG:  model: predicted
+2023-06-01 18:02:46,171 - INFO:  model: MAPE= 0.13461268963445164 
+2023-06-01 18:02:47,933 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 18:02:48,067 - DEBUG:  prepare: started 
+2023-06-01 18:02:49,057 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:03:55,707 - DEBUG:  prepare: normalize finished
+2023-06-01 18:04:35,609 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:04:39,652 - DEBUG:  encode: fitted 
+2023-06-01 18:04:41,916 - DEBUG:  encode: test transformed 
+2023-06-01 18:04:41,917 - DEBUG:  prepare: finished
+2023-06-01 18:10:49,242 - DEBUG:  model: learned
+2023-06-01 18:10:56,389 - DEBUG:  model: predicted
+2023-06-01 18:10:56,395 - INFO:  model: MAPE= 0.13544794174208244 
+2023-06-01 18:10:58,088 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 18:10:58,207 - DEBUG:  prepare: started 
+2023-06-01 18:10:59,143 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:12:05,684 - DEBUG:  prepare: normalize finished
+2023-06-01 18:12:45,687 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:12:49,636 - DEBUG:  encode: fitted 
+2023-06-01 18:12:51,749 - DEBUG:  encode: test transformed 
+2023-06-01 18:12:51,749 - DEBUG:  prepare: finished
+2023-06-01 18:18:56,410 - DEBUG:  model: learned
+2023-06-01 18:19:03,541 - DEBUG:  model: predicted
+2023-06-01 18:19:03,547 - INFO:  model: MAPE= 0.1362038155302887 
+2023-06-01 18:19:05,352 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 18:19:05,479 - DEBUG:  prepare: started 
+2023-06-01 18:19:06,462 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:20:12,759 - DEBUG:  prepare: normalize finished
+2023-06-01 18:20:54,320 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:20:58,506 - DEBUG:  encode: fitted 
+2023-06-01 18:21:00,694 - DEBUG:  encode: test transformed 
+2023-06-01 18:21:00,694 - DEBUG:  prepare: finished
+2023-06-01 18:26:49,773 - DEBUG:  model: learned
+2023-06-01 18:26:56,777 - DEBUG:  model: predicted
+2023-06-01 18:26:56,783 - INFO:  model: MAPE= 0.13560442976460338 
+2023-06-01 18:26:58,460 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 18:26:58,591 - DEBUG:  prepare: started 
+2023-06-01 18:26:59,498 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:28:05,872 - DEBUG:  prepare: normalize finished
+2023-06-01 18:28:49,059 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:28:53,245 - DEBUG:  encode: fitted 
+2023-06-01 18:28:55,451 - DEBUG:  encode: test transformed 
+2023-06-01 18:28:55,451 - DEBUG:  prepare: finished
+2023-06-01 18:34:58,761 - DEBUG:  model: learned
+2023-06-01 18:35:08,783 - DEBUG:  model: predicted
+2023-06-01 18:35:08,790 - INFO:  model: MAPE= 0.1367956188365341 
+2023-06-01 18:35:12,424 - INFO:  init params: {'rounding': {'odometer': 3000, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 18:35:12,564 - DEBUG:  prepare: started 
+2023-06-01 18:35:13,800 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:36:34,341 - DEBUG:  prepare: normalize finished
+2023-06-01 18:37:27,435 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:37:31,911 - DEBUG:  encode: fitted 
+2023-06-01 18:37:34,253 - DEBUG:  encode: test transformed 
+2023-06-01 18:37:34,253 - DEBUG:  prepare: finished
+2023-06-01 18:43:56,935 - DEBUG:  model: learned
+2023-06-01 18:44:04,907 - DEBUG:  model: predicted
+2023-06-01 18:44:04,916 - INFO:  model: MAPE= 0.1374075418680119 
+2023-06-01 18:44:06,834 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 18:44:06,966 - DEBUG:  prepare: started 
+2023-06-01 18:44:08,048 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:45:21,223 - DEBUG:  prepare: normalize finished
+2023-06-01 18:46:03,122 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:46:07,490 - DEBUG:  encode: fitted 
+2023-06-01 18:46:09,874 - DEBUG:  encode: test transformed 
+2023-06-01 18:46:09,874 - DEBUG:  prepare: finished
+2023-06-01 18:52:54,223 - DEBUG:  model: learned
+2023-06-01 18:53:03,032 - DEBUG:  model: predicted
+2023-06-01 18:53:03,038 - INFO:  model: MAPE= 0.14003545305790321 
+2023-06-01 18:53:04,944 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 18:53:05,077 - DEBUG:  prepare: started 
+2023-06-01 18:53:06,128 - DEBUG:  prepare: fillna finished 
+2023-06-01 18:54:21,888 - DEBUG:  prepare: normalize finished
+2023-06-01 18:55:04,027 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 18:55:08,670 - DEBUG:  encode: fitted 
+2023-06-01 18:55:11,041 - DEBUG:  encode: test transformed 
+2023-06-01 18:55:11,041 - DEBUG:  prepare: finished
+2023-06-01 19:01:51,928 - DEBUG:  model: learned
+2023-06-01 19:01:59,541 - DEBUG:  model: predicted
+2023-06-01 19:01:59,547 - INFO:  model: MAPE= 0.14074428819333681 
+2023-06-01 19:02:01,429 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 4}, 'handler': 'Validator'} 
+2023-06-01 19:02:01,557 - DEBUG:  prepare: started 
+2023-06-01 19:02:02,563 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:03:11,352 - DEBUG:  prepare: normalize finished
+2023-06-01 19:03:51,050 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:03:55,321 - DEBUG:  encode: fitted 
+2023-06-01 19:03:57,525 - DEBUG:  encode: test transformed 
+2023-06-01 19:03:57,525 - DEBUG:  prepare: finished
+2023-06-01 19:10:19,827 - DEBUG:  model: learned
+2023-06-01 19:10:27,459 - DEBUG:  model: predicted
+2023-06-01 19:10:27,464 - INFO:  model: MAPE= 0.14225734600275192 
+2023-06-01 19:10:29,221 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 19:10:29,343 - DEBUG:  prepare: started 
+2023-06-01 19:10:30,315 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:11:39,278 - DEBUG:  prepare: normalize finished
+2023-06-01 19:12:21,117 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:12:25,478 - DEBUG:  encode: fitted 
+2023-06-01 19:12:27,797 - DEBUG:  encode: test transformed 
+2023-06-01 19:12:27,797 - DEBUG:  prepare: finished
+2023-06-01 19:18:34,329 - DEBUG:  model: learned
+2023-06-01 19:18:41,912 - DEBUG:  model: predicted
+2023-06-01 19:18:41,918 - INFO:  model: MAPE= 0.14161572035102576 
+2023-06-01 19:18:43,961 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 19:18:44,082 - DEBUG:  prepare: started 
+2023-06-01 19:18:45,072 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:19:54,283 - DEBUG:  prepare: normalize finished
+2023-06-01 19:20:35,701 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:20:40,123 - DEBUG:  encode: fitted 
+2023-06-01 19:20:42,462 - DEBUG:  encode: test transformed 
+2023-06-01 19:20:42,462 - DEBUG:  prepare: finished
+2023-06-01 19:27:00,340 - DEBUG:  model: learned
+2023-06-01 19:27:09,863 - DEBUG:  model: predicted
+2023-06-01 19:27:09,873 - INFO:  model: MAPE= 0.1429499305886468 
+2023-06-01 19:27:11,820 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 5}, 'handler': 'Validator'} 
+2023-06-01 19:27:11,967 - DEBUG:  prepare: started 
+2023-06-01 19:27:12,964 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:28:26,850 - DEBUG:  prepare: normalize finished
+2023-06-01 19:29:14,519 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:29:19,379 - DEBUG:  encode: fitted 
+2023-06-01 19:29:21,742 - DEBUG:  encode: test transformed 
+2023-06-01 19:29:21,743 - DEBUG:  prepare: finished
+2023-06-01 19:35:28,962 - DEBUG:  model: learned
+2023-06-01 19:35:36,782 - DEBUG:  model: predicted
+2023-06-01 19:35:36,788 - INFO:  model: MAPE= 0.14390471452893713 
+2023-06-01 19:35:38,685 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 10}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 19:35:38,806 - DEBUG:  prepare: started 
+2023-06-01 19:35:39,771 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:36:48,383 - DEBUG:  prepare: normalize finished
+2023-06-01 19:37:31,177 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:37:35,306 - DEBUG:  encode: fitted 
+2023-06-01 19:37:37,526 - DEBUG:  encode: test transformed 
+2023-06-01 19:37:37,526 - DEBUG:  prepare: finished
+2023-06-01 19:43:16,181 - DEBUG:  model: learned
+2023-06-01 19:43:24,118 - DEBUG:  model: predicted
+2023-06-01 19:43:24,124 - INFO:  model: MAPE= 0.14358121163224113 
+2023-06-01 19:43:25,884 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 12}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 19:43:26,012 - DEBUG:  prepare: started 
+2023-06-01 19:43:26,941 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:44:35,558 - DEBUG:  prepare: normalize finished
+2023-06-01 19:45:18,284 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:45:22,391 - DEBUG:  encode: fitted 
+2023-06-01 19:45:24,600 - DEBUG:  encode: test transformed 
+2023-06-01 19:45:24,600 - DEBUG:  prepare: finished
+2023-06-01 19:51:03,916 - DEBUG:  model: learned
+2023-06-01 19:51:11,949 - DEBUG:  model: predicted
+2023-06-01 19:51:11,955 - INFO:  model: MAPE= 0.14434289921913215 
+2023-06-01 19:51:13,709 - INFO:  init params: {'rounding': {'odometer': 600, 'condition': 1, 'prefix_size': 15}, 'model': {'criterion': 'poisson', 'n_estimators': 128, 'max_depth': 32, 'min_samples_leaf': 2, 'max_features': 16}, 'slice': {'cat_cols': ['make', 'model', 'trim', 'body', 'transmission', 'state', 'seller', 'year', 'odometer', 'condition']}, 'model_class': <class 'sklearn.ensemble._forest.RandomForestRegressor'>, 'encoder_class': <class 'category_encoders.target_encoder.TargetEncoder'>, 'encoder': {'min_samples_leaf': 2, 'smoothing': 5}, 'sellers': {'stages': 6}, 'handler': 'Validator'} 
+2023-06-01 19:51:13,828 - DEBUG:  prepare: started 
+2023-06-01 19:51:14,800 - DEBUG:  prepare: fillna finished 
+2023-06-01 19:52:23,855 - DEBUG:  prepare: normalize finished
+2023-06-01 19:53:08,246 - DEBUG:  prepare: classify_sellers finished
+2023-06-01 19:53:12,502 - DEBUG:  encode: fitted 
+2023-06-01 19:53:14,874 - DEBUG:  encode: test transformed 
+2023-06-01 19:53:14,874 - DEBUG:  prepare: finished
+2023-06-01 19:59:27,703 - DEBUG:  model: learned
+2023-06-01 19:59:36,013 - DEBUG:  model: predicted
+2023-06-01 19:59:36,019 - INFO:  model: MAPE= 0.14476838935045666 
+2023-06-01 21:45:14,414 - DEBUG:  handle_msg[41f47565-b64f-4fac-80ca-72ee713c5aa2]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 45, 13, 969000, tzinfo=tzutc()), 'msg_id': '1142b25a034d435486816d9aef844501', 'username': 'username', 'session': 'd159703941374d668774ba5121e84ce3', 'msg_type': 'comm_msg', 'version': '5.2'}, 'msg_id': '1142b25a034d435486816d9aef844501', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '41f47565-b64f-4fac-80ca-72ee713c5aa2', 'data': {'method': 'request_states'}}, 'buffers': []})
+2023-06-01 21:45:14,438 - DEBUG:  handle_close[41f47565-b64f-4fac-80ca-72ee713c5aa2]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 45, 14, 436000, tzinfo=tzutc()), 'msg_id': 'c88d361c5d314f0fb5d817ee0b3776bd', 'username': 'username', 'session': 'd159703941374d668774ba5121e84ce3', 'msg_type': 'comm_close', 'version': '5.2'}, 'msg_id': 'c88d361c5d314f0fb5d817ee0b3776bd', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '41f47565-b64f-4fac-80ca-72ee713c5aa2', 'data': {}}, 'buffers': []})
+2023-06-01 21:46:03,708 - DEBUG:  handle_msg[4eb0713d-e2a6-4e72-a6b0-762806b6381b]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 46, 3, 703000, tzinfo=tzutc()), 'msg_id': 'b48fadc2053d4eeb85b8f0bbf2ceb6f3', 'username': 'username', 'session': '9ad0df68dbdf4d4c8e6c58a7dfc25c12', 'msg_type': 'comm_msg', 'version': '5.2'}, 'msg_id': 'b48fadc2053d4eeb85b8f0bbf2ceb6f3', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '4eb0713d-e2a6-4e72-a6b0-762806b6381b', 'data': {'method': 'request_states'}}, 'buffers': []})
+2023-06-01 21:46:03,718 - DEBUG:  handle_close[4eb0713d-e2a6-4e72-a6b0-762806b6381b]({'header': {'date': datetime.datetime(2023, 6, 1, 18, 46, 3, 714000, tzinfo=tzutc()), 'msg_id': 'a329153e746e46a787a2dc4d2f705820', 'username': 'username', 'session': '9ad0df68dbdf4d4c8e6c58a7dfc25c12', 'msg_type': 'comm_close', 'version': '5.2'}, 'msg_id': 'a329153e746e46a787a2dc4d2f705820', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '4eb0713d-e2a6-4e72-a6b0-762806b6381b', 'data': {}}, 'buffers': []})
