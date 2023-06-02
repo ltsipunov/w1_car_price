@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# this module defines low-level procedures for dataset used in this task,
+# uses specific of the task and data
 
+# In[1]:
 
 import pandas as pd
 import re
@@ -43,22 +45,21 @@ warnings.filterwarnings('ignore')
 
 # In[ ]:
 
-
+# --- the global varibales must be set from calling process before run
 X = ['year','make','model','trim','body','transmission','state','condition','odometer','seller']
 cat_cols = ['make','model','trim','body','transmission','state','seller'] 
-#X = ['year','make','model','trim','condition','odometer','seller']
 y = ['sellingprice']
-
-#cat_cols = ['make','model','trim','seller'] 
 
 
 # In[ ]:
 
-
+# 
 def fillna(df):
     df[['make','model','trim','body']] = df[['make','model','trim','body']].fillna('UNKNOWN')
-    df[['color','interior']] = df[['color','interior']].fillna('—')
-    df['transmission'] = df['transmission'].fillna('automatic')
+    df[['color','interior']] = df[['color','interior']].fillna('—')       # as the synbol already used in this columns for unknown  
+    df['transmission'] = df['transmission'].fillna('automatic')           # this feature has very little effect so used simple fill  
+    
+# -- for numeric columns, unknowns filled as average by year    
     cond_mean = df.groupby('year').condition.mean()
     idx_na= df.condition.isna()
     df.loc[idx_na,'condition'] = df[idx_na].year.apply(lambda s: cond_mean[s])    
@@ -78,12 +79,13 @@ def normalize(df,rounding):
     start = ti.default_timer()
     prefix_size = rounding['prefix_size'] if ('prefix_size' in rounding) else 5 
 
-    cols_to_upper= ['make','model','trim','body']
-    cols_dt = ['yr','month','day','hour','minute','second','weekday','yearday','dl']
-    cols_abbr = ['trim','seller']
- #   cols_trash = ['saledate','trim','abbr_seller','seller','second','yearday','dl']
-    def transform_row(r,cols_to_upper,cols_dt,cols_abbr):
-        def abbr(s,prefix_size ):
+    cols_to_upper= ['make','model','trim','body']                                     # columns to convert to standard uppercase
+    cols_dt = ['yr','month','day','hour','minute','second','weekday','yearday','dl']  # columns to unpack selling time
+    cols_abbr = ['trim','seller']                                                     # columns to reduce of cardinality    
+
+# ------------ general procedure to transform each record     
+    def transform_row(r,cols_to_upper,cols_dt,cols_abbr):              
+        def abbr(s,prefix_size ):                          # spaces in prefix must be trimmed, then only first word left 
             s = s.strip().upper()
             if len(s) <= prefix_size:
                 return(s)
@@ -92,15 +94,17 @@ def normalize(df,rounding):
             if i > 0:
                 s = s[:i]        
             return(s)
-
+        
+    # selling time converted to tuple , however these fields have little effect, so they dropped in late versions
         t =  dt.datetime.strptime(r['saledate'].split('GMT')[0]  ,"%a %b %d %Y %H:%M:%S ").timetuple()
+        
         dc = dict(zip(cols_dt ,t))
         for col in cols_abbr:
             dc[col] = abbr(r[col],prefix_size)
 
         for col in cols_to_upper:
             dc[col] = str(r[col]).upper()
- 
+    # to round numeric fileds to reduce cardinality (optionally possible coercion to string by setting cat_cols in params) 
         dc['odometer']= round(r['odometer']/rounding['odometer'])
         dc['condition']= round(r['condition'],rounding['condition'])
         for c in cat_cols:
@@ -118,7 +122,7 @@ def normalize(df,rounding):
 # In[8]:
 
 
-def skew(df,threshold,mult):
+def skew(df,threshold,mult):                             # class to up/down-scale dataset by target variable
     df0 = df[df[y[0]]>threshold]
     df1 = df[df[y[0]]<threshold]
     
@@ -145,7 +149,9 @@ def encode_transform(df,enc ):
 
 
 # In[10]:
-def classify_sellers(ds,params):
+def classify_sellers(ds,params):       
+    # I tried to create additional feature to estimate tendency of a seller to buy trash cars - by .25 quantile of condition
+    # but the idea proved useless with target encoder
     stages = params['stages']
     abbr_count = ds['seller'].value_counts()
 

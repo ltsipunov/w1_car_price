@@ -27,7 +27,8 @@ class Task:
         logging.info(f"init params: {self.params} ")
         if 'slice' in self.params:
             self.set_slice(self.params['slice'])
-
+            
+# ---- set scopes of columns for features and target used in utils module for the instance  
     def set_slice(self,slice):
         global X,y,cat_cols
         X = slice['X'] if 'X' in slice else X
@@ -35,7 +36,7 @@ class Task:
         X = slice['cat_cols'] if 'cat_cols' in slice else cat_cols
 
 
-
+# ----- define class and parameters for encoder and regressor used for the instance 
     def new_encoder(self):
         enc_params =  { 'handle_unknown':'value','cols':cat_cols }        
         encoder_class= (self.params['encoder_class']) if ('encoder_class' in self.params) else TargetEncoder  
@@ -47,6 +48,7 @@ class Task:
     def new_model(self):
         self.model = (self.params['model_class']) if ('model_class' in self.params) else RandomForestRegressor
         return self.model
-
+    
+# --- abstract class for a main proceudre  , must be overridden
     def process(self):
         return self
